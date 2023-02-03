@@ -15,12 +15,12 @@ def solution(lottos, win_nums):
     minimum = num_count
     maximum = num_count + zero_count
     
-    if maximum == 0 or maximum == 1:
+    if maximum <= 1:
         answer.append(6)
     else :
         answer.append(7-maximum)
     
-    if minimum == 0 or minimum == 1:
+    if minimum <= 1:
         answer.append(6)
     else :
         answer.append(7-minimum)
